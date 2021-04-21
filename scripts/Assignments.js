@@ -20,11 +20,11 @@ const findWalker = (pet, allWalkers) => {
 
 export const Assignments = () => {
     let assignmentHTML = ""
-    assignmentHTML = "<ul>"
+    assignmentHTML += "<ul>"
 
     for (const currentPet of pets) {
         const currentPetWalker = findWalker(currentPet, walkers)
-        assignmentHTML = `
+        assignmentHTML += `
             <li>
                 ${currentPet.name} is being walked by
                 ${currentPetWalker.name} in ${currentPetWalker.city}

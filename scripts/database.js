@@ -135,3 +135,5 @@ export const getPets = () => {
     return [...database.pets]
 }
 
+// implicit return, motherf*&^er
+export const getCities = () => [...database.cities]
